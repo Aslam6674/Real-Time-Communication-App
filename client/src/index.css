@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --accent: #7c6bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: #f0eeff;
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 4px; }
+
+.auth-input {
+  @apply w-full bg-[#18181f] border border-purple-900/30 rounded-lg px-4 py-3
+         text-white placeholder-gray-600 outline-none mb-3 text-sm
+         focus:border-purple-500 focus:ring-2 focus:ring-purple-900/30 transition-all;
+}
